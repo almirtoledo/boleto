@@ -1,0 +1,16 @@
+{
+  "name": "almirtoledo/boleto",
+  "autoload": {
+    "psr-4": {
+      "AlmirToledo\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Almir Toledo"
+    }
+  ],
+  "require": {
+    "openboleto/openboleto": "^2.0"
+  }
+}

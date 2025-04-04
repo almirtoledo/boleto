@@ -1,0 +1,15 @@
+services:
+  app:
+    user: '1000:1000'
+    build:
+      context: .
+      dockerfile: devfile
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 80:80
+    networks:
+      - local
+
+networks:
+  local:
