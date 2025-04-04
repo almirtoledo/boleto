@@ -28,6 +28,20 @@ $boleto = new Bradesco(array(
   ),
 ));
 $html = $boleto->getOutput();
+$css = '<style>
+@page {
+  size: A4 !important;
+  margin: 0 !important;
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+</style>';
+
+$html = $css . $html;
 $dompdf = new Dompdf();
 $dompdf->loadHtml($html);
 $dompdf->setPaper('A4', 'portrait');
