@@ -11,6 +11,7 @@
     }
   ],
   "require": {
-    "openboleto/openboleto": "^2.0"
+    "openboleto/openboleto": "^2.0",
+    "dompdf/dompdf": "^3.1"
   }
 }
